@@ -1,0 +1,67 @@
+.navBar_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 3.1rem;
+    position: relative;
+}
+
+.navBar_box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    animation: borderBottomAnim 2s forwards;
+}
+
+.navBar_box p {
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideIn ease-out 0.5s forwards;
+}
+
+/* //////animation///////////// */
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navBar_box p:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.navBar_box p:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.navBar_box p:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.navBar_box p:nth-child(4) {
+    animation-delay: 2s;
+}
+
+@keyframes borderBottomAnim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.img_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img_wrapper .img_wrapperImg {
+    width: 98%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
