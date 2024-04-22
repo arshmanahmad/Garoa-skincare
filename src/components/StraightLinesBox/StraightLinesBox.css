@@ -1,0 +1,28 @@
+.landingPage_lineBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.landingPage_lineBox span {
+    width: 1px;
+    height: 100vh;
+    background-color: black;
+    animation: contract 3s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes contract {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        margin-top: 6rem;
+        height: 35rem;
+
+    }
+
+}
