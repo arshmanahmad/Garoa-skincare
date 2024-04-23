@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from 'react'
-import './LandingPage.css'
+import './LandingPage.css';
 import NavBar from '../../components/NavBar/NavBar'
 import StraightLinesBox from '../../components/StraightLinesBox/StraightLinesBox'
 import AnimatedCircles from '../../components/AnimatedCircles/AnimatedCircles'
 import CaptionBar from '../../components/CaptionBar/CaptionBar'
 const LandingPage = () => {
     const [showLabelBox, setShowLabelBox] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowLabelBox(true)
         }, 4000)
         return () => clearTimeout(timer)
     }, [])
+    const handleWheelScroll = (evt) => {
+        evt.preventDefault();
+        setScrollPosition(scrollPosition + evt.deltaY);
+    };
     return (
         <React.Fragment>
-            <div className="landingPage_box">
+            <div
+                id='container'
+                className="landingPage_box"
+                onWheel={handleWheelScroll}
+                style={{ transform: `translateX(-${scrollPosition}px)` }}
+            >
                 <div className="landingPage_section1">
                     {showLabelBox && <NavBar />}
                     {showLabelBox && <AnimatedCircles />}
@@ -47,6 +57,8 @@ const LandingPage = () => {
                     </div>
                     <p className='bigHeading'>SUMMARY</p>
                 </div>
+
+
             </div>
         </React.Fragment >
     )
