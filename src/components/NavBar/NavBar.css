@@ -1,10 +1,18 @@
 .navBar_box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
     height: 3.1rem;
     position: fixed;
+}
+
+.first_link {
+    margin-left: 2rem;
+}
+
+.last_link {
+    margin-right: 2rem;
 }
 
 .navBar_box::after {
