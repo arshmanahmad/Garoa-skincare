@@ -1,10 +1,10 @@
 import React from 'react'
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = ({ classForChange }) => {
     return (
         <React.Fragment>
-            <div className="navBar_box">
+            <div className={`navBar_box ${classForChange}`}>
                 <p>STUDIO-BA®</p>
                 <p>Sao Paulo 11:56 AM</p>
                 <p>London 02:57 PM</p>

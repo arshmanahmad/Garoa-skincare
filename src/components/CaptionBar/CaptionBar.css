@@ -1,0 +1,21 @@
+.captionContainer {
+    width: 100vw;
+    height: 2.7rem;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.captionContainer span {
+    font-size: 2rem;
+}
+
+.caption_text {
+    margin-left: 2rem;
+
+}
+
+.caption_number {
+    margin-right: 2rem;
+}

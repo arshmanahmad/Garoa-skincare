@@ -1,18 +1,22 @@
 .landingPage_box {
-    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 100vh;
+    width: 200vw;
     background-color: #f1efed;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease;
 }
 
-.landing_section {
-    width: 100%;
+
+.landingPage_section1 {
+    width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .landingPage_paraBox {
@@ -34,13 +38,39 @@
 
 .small_para p {
     animation: fadeInUp 3s ease forwards;
-
 }
+
+
 
 .big_para p {
     font-size: 3rem;
     animation: fadeInUpBigPara 3s ease forwards;
 
+}
+
+.nanoSized_para {
+    font-size: 0.8rem;
+}
+
+/* ///////////////section2/////////////// */
+.landingPage_section2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.caption_container {
+    margin-top: 3rem;
+}
+
+.bigHeading {
+    font-size: 15rem;
+    margin-top: 14rem;
 }
 
 /* ///////////animation///////// */

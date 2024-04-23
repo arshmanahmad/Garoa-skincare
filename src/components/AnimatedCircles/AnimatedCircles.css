@@ -1,0 +1,46 @@
+.circle_container {
+    width: 100%;
+}
+
+.circle {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 360px;
+    background-color: black;
+    position: absolute;
+    margin-top: 12rem;
+    animation: rightToLeft 2s ease forwards infinite;
+}
+
+.circle2 {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 360px;
+    background-color: black;
+    position: absolute;
+    margin-top: 12rem;
+    animation: rightToLeft 1s ease forwards infinite;
+}
+
+.circle3 {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 360px;
+    background-color: black;
+    position: absolute;
+    margin-top: 12rem;
+    animation: rightToLeft 3s ease forwards infinite;
+}
+
+/* //////animation/////// */
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(75vw)
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+    }
+
+}
