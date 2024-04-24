@@ -1,11 +1,11 @@
 .landingPage_box {
     height: 100vh;
-    width: 200vw;
+    width: 500vw;
     background-color: #f1efed;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     scroll-behavior: smooth;
     transition: transform 0.5s ease;
 }
@@ -61,7 +61,7 @@
     border-left: 1px solid;
     border-right: 1px solid;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .caption_container {
@@ -71,6 +71,63 @@
 .bigHeading {
     font-size: 15rem;
     margin-top: 14rem;
+}
+
+/* //////////////section3////////////// */
+.landingPage_section3 {
+    height: 100vh;
+    width: 100vw;
+}
+
+.vertical_barContainer {
+    margin-top: 3rem;
+}
+
+.section3_parasContainer {
+    width: 90vw;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.section3_para1 {
+    font-size: 0.7rem;
+}
+
+.section3_para2 {
+    font-size: 1.2rem;
+
+}
+
+.section3_para3 {
+    font-size: 1.2rem;
+
+}
+
+/* ///////////section4/////////// */
+.landingPage_section4 {
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: end;
+
+}
+
+.img_container {
+    height: 98vh;
+    width: 80vw;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    background-image: url(../../assets//images/651f0e73-3083-4df7-aed7-c3ff45e0635b__SMALLAvatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.second_verticalBar {
+    margin-top: 3.1rem;
 }
 
 /* ///////////animation///////// */

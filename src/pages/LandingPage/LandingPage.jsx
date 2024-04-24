@@ -4,6 +4,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import StraightLinesBox from '../../components/StraightLinesBox/StraightLinesBox'
 import AnimatedCircles from '../../components/AnimatedCircles/AnimatedCircles'
 import CaptionBar from '../../components/CaptionBar/CaptionBar'
+import VerticalBar from '../../components/VerticalBar/VerticalBar';
 const LandingPage = () => {
     const [showLabelBox, setShowLabelBox] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -45,7 +46,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="landingPage_section2">
-                    <NavBar classForChange="navBarChange" />
+                    {showLabelBox && <NavBar />}
                     <div className="caption_container">
                         <CaptionBar text="FOREWORD" number="3" />
                         <CaptionBar text="APPROACH" number="5" />
@@ -56,6 +57,35 @@ const LandingPage = () => {
                         <CaptionBar text="COLOPHON" number="25" />
                     </div>
                     <p className='bigHeading'>SUMMARY</p>
+                </div>
+                <div className="landingPage_section3">
+                    {showLabelBox && <NavBar />}
+                    <div className="vertical_barContainer">
+                        <VerticalBar text="FOREWORD" number="3" />
+                    </div>
+                    <div className="section3_parasContainer">
+                        <div className="section3_para1">
+                            <p>
+                                Bruno is currently part of the Jury board for two of the most renowned awards in the industry Awwwards and Webby Awards.
+                            </p>
+                        </div>
+                        <div className="section3_para2">
+                            <p>
+                                Studio—BA® is an award-winning design and art direction practice working with a broad range of clients across a mix of disciplines that includes web design, creative direction, graphic design, and photography together with an extensive community of collaborators: photographers, 3d artists, and creative developers to deliver bespoke design projects. With an international client list,  the practice can work alone or in collaboration with design agencies,   and bureaus, past experiences include partnerships with Jam3, Sapient Razorfish and Publicis Groupé.
+                            </p>
+                        </div>
+                        <div className="section3_para3">
+                            <p>
+                                Since the start of the practice in 2010, Bruno has received awards and nominations from The FWA, Awwwards, Webby Awards, Visuelle, CSS Design Awards, AIGA, Typewolf, Behance, Muzli, and others.   Bruno is frequently called to be a part of jury boards of world renowned creative competitions. Currently a proud juror of the Webby Awards (The International Academy of Digital Arts and Sciences®) and Awwwards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="landingPage_section4">
+                    {showLabelBox && <NavBar />}
+                    <div className="img_container">
+                    </div>
+                    <VerticalBar className="second_verticalBar" text="APPROACH" number="5" />
                 </div>
 
 
