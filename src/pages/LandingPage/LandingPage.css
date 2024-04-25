@@ -1,15 +1,13 @@
 .landingPage_box {
-    height: 100vh;
     width: 500vw;
+    height: 100%;
     background-color: #f1efed;
-    /* overflow-x: hidden; */
     display: flex;
+    overflow-y: hidden;
     flex-direction: row;
-    /* overflow-x: auto; */
     scroll-behavior: smooth;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
 }
-
 
 .landingPage_section1 {
     width: 100vw;
@@ -31,7 +29,6 @@
 .small_para {
     width: 26.5%;
     font-size: 0.9rem;
-    font-weight: 500;
     display: flex;
     align-items: end;
 }
@@ -75,59 +72,82 @@
 
 /* //////////////section3////////////// */
 .landingPage_section3 {
-    height: 100vh;
-    width: 100vw;
+    width: 150vw;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    display: flex;
+    position: relative;
 }
 
 .vertical_barContainer {
     margin-top: 3rem;
+    width: 10%;
 }
 
 .section3_parasContainer {
-    width: 90vw;
-    margin-left: 5rem;
+    width: 48%;
     margin-top: 5rem;
     display: flex;
+    justify-content: space-between;
     gap: 4rem;
 }
 
+
+
 .section3_para1 {
     font-size: 0.7rem;
+    width: 20%;
 }
 
 .section3_para2 {
     font-size: 1.2rem;
+    width: 45%;
 
 }
 
 .section3_para3 {
     font-size: 1.2rem;
-
+    width: 35%;
+    margin-right: 4rem;
 }
 
 /* ///////////section4/////////// */
-.landingPage_section4 {
+/* .landingPage_section4 {
     height: 100vh;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     justify-content: end;
 
-}
+} */
 
 .img_container {
     height: 98vh;
-    width: 80vw;
+    width: 52%;
+    margin-left: 8rem;
     margin-top: 3rem;
-    margin-right: 4rem;
     background-image: url(../../assets//images/651f0e73-3083-4df7-aed7-c3ff45e0635b__SMALLAvatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    transition: 0.2s;
 }
+
+
 
 .second_verticalBar {
     margin-top: 3.1rem;
+    border-right: 100%;
+}
+
+/* ////section5///////////// */
+.landingPage_section5 {
+    height: 100vh;
+    width: 100vw;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 /* ///////////animation///////// */

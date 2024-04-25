@@ -3,8 +3,10 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    background-color: #f1efed;
     height: 3.1rem;
     position: fixed;
+    z-index: 1;
 }
 
 .first_link {
@@ -72,4 +74,20 @@
     100% {
         width: 100%;
     }
+}
+
+
+@keyframes animateText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.changeText {
+    animation: animateText 2s forwards;
+    animation-delay: 4s;
 }
